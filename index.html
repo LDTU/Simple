@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galileo Design</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700;900&family=Noto+Sans:wght@400;500;700;900&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex flex-col min-h-screen bg-white overflow-x-hidden">
+    <div class="flex flex-col h-full">
+        <header class="flex items-center justify-between border-b border-gray-200 px-10 py-3">
+            <div class="flex items-center gap-4">
+                <div class="w-4 h-4">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_6_319)">
+                            <path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_6_319"><rect width="48" height="48" fill="white"></rect></clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <h2 class="text-lg font-bold text-black">Samarkand</h2>
+            </div>
+            <div class="flex gap-8 items-center">
+                <nav class="flex gap-4">
+                    <a class="text-sm font-medium text-black" href="index.html" id="nav-home">Home</a>
+                    <a class="text-sm font-medium text-black" href="menu.html" id="nav-menu">Menu</a>
+                    <a class="text-sm font-medium text-black" href="cart.html" id="nav-cart">Cart</a>
+                </nav>
+                <div class="relative">
+                    <i class="fas fa-shopping-cart text-gray-600 hover:text-gray-800 cursor-pointer" id="cart-icon"></i>
+                    <div id="cart-dropdown" class="absolute right-0 mt-2 w-64 bg-white shadow-lg rounded-lg hidden">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold text-gray-800">Giỏ Hàng</h3>
+                            <div class="cart-items mt-4"></div>
+                            <div class="mt-4 flex justify-between items-center border-t pt-2">
+                                <div class="text-xl font-semibold text-gray-800">Tổng Cộng</div>
+                                <div id="cart-total" class="text-xl font-semibold text-gray-800">0 VND</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="flex flex-col flex-1 items-center py-5 px-10">
+            <div class="flex flex-col max-w-screen-lg w-full">
+                <div class="flex flex-col items-center bg-samarkand min-h-[480px] bg-cover bg-center bg-no-repeat p-4 rounded-xl text-center text-white">
+                    <h1 class="text-4xl font-black mb-2">Welcome to Samarkand</h1>
+                    <h2 class="text-sm font-normal">Discover the beauty of Uzbek cuisine</h2>
+                    <button class="flex items-center justify-center h-12 px-5 mt-4 bg-orange-600 text-black rounded-xl text-base font-bold">
+                        Order Now
+                    </button>
+                </div>
+                <section class="py-5 px-4">
+                    <h2 class="text-2xl font-bold text-black mb-3">About Us</h2>
+                    <p class="text-base text-black">Samarkand is a modern Uzbek restaurant located in San Francisco. We aim to bring the rich flavors and textures of Uzbek food to the Bay Area. Our goal is to provide our guests with a warm, inviting atmosphere that reflects the fusion of tradition and contemporary design.</p>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
